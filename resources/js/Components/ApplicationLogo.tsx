@@ -1,6 +1,6 @@
 import { SVGAttributes } from 'react';
 
-export default function ApplicationLogo(props: SVGAttributes<SVGElement>) {
+export default function ApplicationLogo(_props: SVGAttributes<SVGElement>) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="oklch(0.715 0.143 215.221)"
