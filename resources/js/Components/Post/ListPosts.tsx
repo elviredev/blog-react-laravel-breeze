@@ -62,15 +62,23 @@ const ListPosts = ({posts, showAuthor = true} : Props) => {
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
       {posts.map((post)  => (
         <Card key={post.id} className="overflow-hidden">
-          {post.image && (
-            <div className="aspect-w-16 aspect-h-9">
-              <img
-                className="object-cover w-full h-48"
-                src={`/storage/${post.image}`}
-                alt={post.title}
-              />
-            </div>
-          )}
+          <div className="aspect-w-16 aspect-h-9">
+            <img
+              className="object-cover w-full h-48"
+              src="/image-placeholder.jpg"
+              alt={post.title}
+            />
+          </div>
+
+          {/*{post.image && (*/}
+          {/*  <div className="aspect-w-16 aspect-h-9">*/}
+          {/*    <img*/}
+          {/*      className="object-cover w-full h-48"*/}
+          {/*      src={`/storage/${post.image}`}*/}
+          {/*      alt={post.title}*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*)}*/}
 
           <CardHeader>
             <h3 className="text-xl text-gray-800 font-semibold">{post.title}</h3>
