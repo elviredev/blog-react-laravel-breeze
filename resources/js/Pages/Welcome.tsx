@@ -41,7 +41,7 @@ const Welcome = ({ auth, posts, canRegister } : PageProps<{posts: Post[], canReg
         </div>
 
         {/* Blog Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
+        <div className="max-w-7xl mx-auto pb-16 px-4 sm:px-6 ">
           <div className="text-center mb-12">
             <h2
               className="relative inline-block text-4xl font-beba-new tracking-wider font-extrabold text-gray-800"

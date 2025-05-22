@@ -125,11 +125,8 @@ const ListPosts = ({posts, showAuthor = true} : Props) => {
                     className="text-red-600 hover:text-red-700"
                     onClick={() => handleDelete(post.id)}
                     disabled={deletingId === post.id}
-                    asChild
                   >
-                    <Link href={route('posts.destroy', post.id)}>
-                      <Trash />
-                    </Link>
+                    <Trash />
                   </Button>
                 </>
               )}
