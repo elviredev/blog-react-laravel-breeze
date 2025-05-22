@@ -24,7 +24,7 @@ export default function Dashboard({userPosts}: Props) {
           <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
               <div className="p-6">
                 <div className="flex justify-between items-center mb-6">
-                  <h2 className="relative inline-block text-3xl font-beba-new tracking-wider font-extrabold text-gray-800">Mes publications</h2>
+                  <h2 className="text-3xl font-beba-new tracking-wider font-extrabold text-gray-800">Mes publications</h2>
 
                   <Link
                     href={route('posts.create')}

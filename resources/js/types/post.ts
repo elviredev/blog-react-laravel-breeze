@@ -18,10 +18,17 @@ export interface Post {
 }
 
 export interface PostFormData {
-  [key: string]: string | File | null
+  [key: string]: string | File | null // requis pour FormDataType
   title: string
   description: string
   image: File | null
+}
+
+// Helper pour typer correctement setData
+export type PostFormField = keyof PostFormData
+
+export type Errors<T> = {
+  [K in keyof T]?: string
 }
 
 export interface DashboardProps extends PageProps {
