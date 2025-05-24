@@ -111,7 +111,6 @@ class PostController extends Controller
     $post->save();
 
     return redirect()->route('dashboard')->with('success', 'Post mis à jour avec succès.');
-
   }
 
   /**
@@ -126,8 +125,7 @@ class PostController extends Controller
     }
 
     $post->delete();
-
-    return redirect()->back()->with('success', 'Post supprimé avec succès.');
+    return redirect()->route('dashboard')->with('success', 'Article supprimé avec succès.');
   }
 
   /**

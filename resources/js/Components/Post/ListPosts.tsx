@@ -65,7 +65,7 @@ const ListPosts = ({posts, showAuthor = true} : Props) => {
           {post.image && (
             <div className="aspect-w-16 aspect-h-9">
               <img
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full sm:h-72"
                 src={`/storage/${post.image}`}
                 alt={post.title}
               />

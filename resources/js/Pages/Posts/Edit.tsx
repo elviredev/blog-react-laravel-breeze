@@ -6,7 +6,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Label } from "@/Components/ui/label";
 import { Input } from "@/Components/ui/input";
 import {Textarea} from "@/Components/ui/textarea";
-import {Button} from "@/Components/ui/button";
+import { Button } from "@/Components/ui/button";
 
 const Edit = ({post}: EditProps) => {
 
@@ -74,18 +74,18 @@ const Edit = ({post}: EditProps) => {
     <AuthenticatedLayout
       header={
         <h2 className="text-xl font-semibold leading-tight text-gray-800">
-          Créer un article
+          Modifier un article
         </h2>
       }
     >
-      <Head title="Créer un article" />
+      <Head title="Modifier un article" />
 
       <div className="py-12">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div className="p-6">
               <h2 className="mb-6 text-2xl font-beba-new tracking-wider font-extrabold text-gray-800">
-                Créer un article
+                Modifier un article
               </h2>
 
               {/* Formulaire */}
